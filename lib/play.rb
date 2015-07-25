@@ -15,9 +15,10 @@ class Play
   private
 
   def fetch_play
-    Net::HTTP.start(source) { | http |
-      resp = http.get(path + file)
-      resp.body
-    }
+    PlayFetcher.fetch({
+      source: source,
+      path: path,
+      file: file
+    })
   end
 end
