@@ -4,6 +4,13 @@ A simple program that accepts a Shakespeare play (defaulting to [Macbeth](http:/
 
 Exercise courtesy of [Upcase](http://upcase.com) by [Thoughtbot](http://thoughtbot.com).
 
+### Running the program
+To run the program, load up a console and type:
+
+```sh
+ruby macbeth_analyzer.rb
+```
+
 ### Instructions
 
 Sample usage/output (using made-up numbers):
