@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'net/http'
+
 class Play
 
   attr_reader :source, :file, :path
@@ -10,6 +13,10 @@ class Play
 
   def contents
     @contents ||= fetch_play
+  end
+
+  def print_character_lines
+    Printer.new.print_lines(PlayParser.character_lines(contents))
   end
 
   private
